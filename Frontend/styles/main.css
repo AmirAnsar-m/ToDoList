@@ -1,0 +1,54 @@
+.text-column {
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.content-section {
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    font-size: 1.5rem;
+}
+
+.content-section p {
+    font-size: 1rem;
+}
+
+.video-wrapper {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixed-video {
+    
+    top: 10%; /* فاصله از بالا */
+    right: 10%; /* فاصله از راست */
+    width: 33.33%; /* تغییر اندازه به 1/3 صفحه */
+    height: auto;
+    object-fit: cover;
+    bottom: 20%;
+}
+
+@media (max-width: 768px) {
+    .fixed-video {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        transform: none;
+    }
+    
+    .text-column {
+        height: auto;
+        order: 2;
+    }
+    
+    .video-wrapper {
+        height: auto;
+        order: 1;
+    }
+}
