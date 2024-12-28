@@ -13,7 +13,7 @@
   width: 300px;
   height: 45px;
   border-radius: 25px;
-  background-color: wheat;
+  background-color: white;
 }
 @media (max-width: 1420px) {
   #start_button {
@@ -22,7 +22,7 @@
     width: 250px;
     height: 45px;
     border-radius: 25px;
-    background-color: wheat;
+    background-color: white;
   }
 }
 body {
@@ -30,10 +30,11 @@ body {
   padding-top: 80px;
   background-color: #050505 !important;
 }
-
+.logo-container {
+  margin-left: -30px;
+}
 .navbar-custom {
   background-color: #242424;
-
   border: 0.02px solid #ffffff;
   border-top: 0;
   border-right: 0;
@@ -41,8 +42,8 @@ body {
 }
 .nav-link.active {
   font-family: Yeseva One;
-  color: wheat !important;
-  font-size: 20px;
+  color: white !important;
+  font-size: 15px;
 }
 .background-section {
   background-image: url("/icons/header-img.jpg");
@@ -104,4 +105,8 @@ body {
     line-height: 1.5;
     width: 300px;
   }
+}
+#start_button:hover {
+  transition: 0.3s;
+  background-color: transparent;
 }
