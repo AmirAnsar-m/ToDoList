@@ -1,9 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDoList</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+          <div class="logo-container">
+            <a href="#" class="navbar-brand me-30">
+              <img id="main-logo" src="icons/logo.png" alt="" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-label="Expand Navigation"
+          >
+            <div class="navbar-toggler-icon"></div>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page"
+                  >Support</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page"></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">More</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page"
+                  >Signup</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="background-section">
+        <div class="header-intro">
+          <div class="flex-container">
+            <span class="header-titel">Plane deinen Tag, erreiche mehr</span>
+          </div>
+          <div class="flex-container">
+            <p class="header-description">
+              Mit unserer To-Do-Liste behältst du den Überblick und erreichst
+              deine Ziele effizienter. Organisiere deinen Tag und steigere deine
+              Produktivität!
+            </p>
+          </div>
+          <div class="flex-container">
+            <button class="btn" id="start_button">Fangen sie jetzt an</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -12,13 +108,30 @@
 <!-- Header 
 START HEADER -->
 
-<!-- END HEADER -->
 
-
-
-<!-- Body 
+    <!-- Body 
 START BODY -->
     <div class="container">
+
+      <div class="row erste-row">
+        <div class="col-12 col-md-6 ms-md-5 me-5 ms-3">
+          <p class="geist1 fw-bold">Beruhige deinen Geist</p>
+          <h1 class="titel fw-bold">
+            Erfassen Sie Aufgaben so schnell wie <br />Ihre Gedanken
+          </h1>
+          <p class="texte mt-4">
+            Verwalten Sie Ihre Aufgaben schneller als Ihre Gedanken – und das
+            <br />ohne dabei ins Schwitzen zu kommen😊
+          </p>
+
+          <p class="geist fw-bold text-success">Planen Sie selbstbewusst</p>
+          <h1 class="titel fw-bold">Vereinfachen Sie Ihre Planung</h1>
+          <p class="texte mt-4">
+            Nutzen Sie Ihre Zeit optimal. Planen Sie Fristen, visualisieren
+            <br />Sie Ihre Woche im Kalender und legen Sie wiederkehrende
+            <br />Aufgaben mit Leichtigkeit fest.
+          </p>
+
         <div class="row erste-row">
             <div class="col-12 col-md-6 ms-md-5 me-5 ms-3" >
                 <p class="geist1 fw-bold ">
@@ -106,16 +219,87 @@ START BODY -->
     </div>
 
 
-<!-- END BODY -->
+          <p class="geist fw-bold text-danger">
+            Bleiben Sie klar organisiert und fokussiert
+          </p>
+          <h1 class="titel fw-bold">Setzen Sie den Fokus auf das, was zählt</h1>
+          <p class="texte mt-4">
+            Schaffen Sie Klarheit im Kopf, indem Sie Ihre Aufgaben in Kategorien
+            <br />wie 'Heute', 'Demnächst' oder mit personalisierten Filtern
+            organisieren. <br />Sehen Sie immer nur das, was im Moment wichtig
+            ist.
+          </p>
 
+          <p class="geist fw-bold text-info">
+            Organisieren Sie auch Ihre Teamarbeit
+          </p>
+          <h1 class="titel fw-bold">
+            Ein zentraler Ort für die Aufgaben Ihres Teams
+          </h1>
+          <p class="texte mt-4">
+            Geben Sie Ihrem Team einen gemeinsamen Raum, um zusammenzuarbeiten
+            <br />und alles im Blick zu behalten – gleichzeitig aber getrennt
+            von Ihren <br />persönlichen Aufgaben und Projekten.
+          </p>
 
+          <p class="geist fw-bold text-primary">
+            Aufgaben erledigen, bevor der Kaffee kalt wird
+          </p>
+          <h1 class="titel fw-bold">Hol dir den Fokus, den du verdienst</h1>
+          <p class="texte-ende mt-4">
+            Setze klare Ziele, bleib organisiert und erledige mehr, als du je
+            erwartet <br />hast. Mit einem klaren Kopf und fokussiertem Arbeiten
+            erreichst <br />du alles, was du dir vornimmst.
+          </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="video-container">
+            <video autoplay loop muted class="fixed-video">
+              <source src="#" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div
+            class="col-12 col-md-8 d-flex flex-column justify-content-center align-items-center text-center mb-5 entschieden"
+          >
+            <h2 class="fw-bold mb-4">
+              Haben Sie sich für ein zukunftsorientiertes Leben entschieden?
+            </h2>
+            <h4 class="mb-4">Dann starten Sie genau hier!</h4>
+            <a href="#"
+              ><button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">JETZT STARTEN</span>
+              </button></a
+            >
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <!-- END BODY -->
 
-<!-- Footer 
+    <!-- Footer 
 START FOOTER  -->
+
+
+    <!-- END FOOTER -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 
 <!-- END FOOTER -->
 
 
 
 </body>
+
 </html>
