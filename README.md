@@ -1,2 +1,3 @@
 # ToDoList
-A collaborative To-Do List website for managing tasks effectively. Includes features for task creation, editing, and progress tracking.
+Eine kollaborative To-Do-Liste-Website für effektives Aufgabenmanagement. Beinhaltet Funktionen zur Erstellung, Bearbeitung und Fortschrittsverfolgung von Aufgaben.
+
