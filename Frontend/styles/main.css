@@ -1,7 +1,7 @@
 /* Header Start  */
 #main-logo {
-  height: 75px;
-  width: 133px;
+  height: 53px;
+  width: 95px;
 }
 #card-motivation-text {
   font-size: 18px;
@@ -28,30 +28,34 @@
 }
 header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-top: 80px;
+}
+.header-container {
+  position: relative;
+}
+.navbar-container {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
 }
 .logo-container {
   margin-left: -30px;
 }
 .navbar-custom {
-  background-color: #242424;
-  border: 0.02px solid #ffffff;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
+  background-color: transparent;
+  border: none;
 }
 .nav-link.active {
   font-family: Yeseva One;
-  color: white !important;
-  font-size: 15px;
+  color: rgb(255, 255, 255) !important;
+  font-size: 18px;
 }
 .background-section {
-  background-image: url("../icons/header-img.jpg");
+  background-image: url("../icons/5fba92b2-36ad-487c-93e4-b332598fbd42.jpg");
   background-size: cover;
   background-position: center;
   height: 700px;
   position: relative;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .background-section .content {
@@ -266,18 +270,7 @@ button:hover .button-text {
   color: #fff;
 }
 
-/* @supports (display: grid) {
-body {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.625rem;
-  grid-template-areas: ". main main ." ". main main .";
-} */
-
-/* #container {
-  grid-area: main;
-  align-self: center;
-  justify-self: center;
-}
-} */
 /* Body End */
+/* Footer Start */
+
+/* Footer End */
