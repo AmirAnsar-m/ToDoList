@@ -497,3 +497,19 @@ textarea:focus {
     display: none;
   }
 }
+
+
+header {
+  z-index: 1;
+  position: relative;
+}
+
+body {
+  z-index: 0;
+  position: relative;
+}
+
+footer {
+  z-index: -1;
+  position: relative;
+}
