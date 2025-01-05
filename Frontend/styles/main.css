@@ -1,4 +1,7 @@
 /* Header Start  */
+body {
+  overflow-x: hidden;
+}
 #main-logo {
   height: 53px;
   width: 95px;
