@@ -310,7 +310,6 @@ footer {
 }
 
 .socialmedia-container a {
-  /* padding: 1em; */
   border-radius: 50%;
   height: 70px;
   width: 70px;
@@ -393,7 +392,7 @@ footer {
   position: absolute;
   right: 60px;
   top: 45px;
-  font-size: large;
+  font-size: small;
   margin-top: 15px;
   margin-left: 65px;
   color: #4c585b;
@@ -405,7 +404,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 300px;
+  width: 320px;
 }
 
 .feedback-label {
@@ -497,3 +496,4 @@ textarea:focus {
   .logo {
     display: none;
   }
+}
