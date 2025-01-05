@@ -269,4 +269,231 @@ button:hover .circle .icon.arrow {
 button:hover .button-text {
   color: #fff;
 }
+footer {
+  min-height: 600px;
+}
 
+.footer-container {
+  background-color: #000000;
+  min-width: 600px;
+  display: grid;
+  position: absolute;
+  height: 350px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact {
+  position: absolute;
+  left: 90px;
+  top: 40px;
+  font-size: large;
+  margin-top: 15px;
+  margin-left: 65px;
+  color: #ffd700;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.socialmedia-container {
+  fill: white;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  margin-top: 150px;
+  margin-left: 70px;
+  gap: 40px;
+  opacity: 1;
+  z-index: 200;
+}
+
+.socialmedia-container a {
+  /* padding: 1em; */
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 5px 10px rgba(105, 96, 9, 1.5);
+  transition: transform 0.3s ease, background-color 0.3s ease, fill 0.3s ease;
+}
+
+.socialmedia-container a svg {
+  height: 40px;
+}
+
+.socialmedia-container a::before {
+  content: attr(data-social);
+  position: absolute;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(-30px) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(0.56, -0.16, 0, 1.97);
+}
+
+.socialmedia-container a:hover {
+  background-color: var(--accent-color);
+  fill: white;
+  transform: scale(1.1);
+}
+
+.socialmedia-container a:hover svg {
+  fill: white;
+}
+
+.socialmedia-container a::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--accent-color);
+  transform: translateY(0) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(0.56, -0.16, 0, 1.97);
+}
+
+.socialmedia-container a:hover::before {
+  transform: translateY(-65px) rotate(0);
+  opacity: 1;
+}
+
+.socialmedia-container a:hover::after {
+  transform: translateY(-42px) rotate(0);
+  opacity: 1;
+}
+
+.logo {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.privacyPolicy-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: #4d4415;
+  font-weight: 500;
+}
+
+.feedback-container {
+  position: absolute;
+  right: 60px;
+  top: 45px;
+  font-size: large;
+  margin-top: 15px;
+  margin-left: 65px;
+  color: #4c585b;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+#feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.feedback-label {
+  font-size: large;
+  font-weight: 700;
+  color: #ffd700;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+  color: #050505;
+  font-size: medium;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #ffd700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.submit-button {
+  background-color: #ffd700;
+  color: #000;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 320px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #ffa500;
+}
+.submit-button:active {
+  background-color: #9c7303;
+}
+
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+  .footer-container {
+    padding-top: 30px;
+    min-width: 300px;
+  }
+  .socialmedia-container {
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, 0%);
+    gap: 20px;
+  }
+  .socialmedia-container a {
+    height: 50px;
+    width: 50px;
+  }
+  .socialmedia-container a svg {
+    height: 30px;
+  }
+  .feedback-container {
+    position: static;
+    margin: 0 auto;
+    margin-bottom: 140px;
+    margin-left: 50%;
+    transform: translate(-53%, 0%);
+  }
+
+  .privacyPolicy-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    white-space: nowrap;
+  }
+
+  .contact,
+  .socialmedia-container::after,
+  .socialmedia-container a::before,
+  .socialmedia-container a::after,
+  .logo {
+    display: none;
+  }
